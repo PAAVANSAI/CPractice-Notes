@@ -1,25 +1,29 @@
-#C Practice
-'''
-1. Concatnate Two Strings without using the inbuilt library functions and only using the while loop.
+# C Practice  -  Concat two strings without the library functions.
 
-#include<stdio.h>
-int main()
-{
-  char a[] = "Hello";
-  char b[] = "World";
-  int i = 0;
-  int j = 0;
-  while(a[i]!='\0')
-  {
-    i=i+1;
-  }
-  while(b[j]!='\0')
-  {
-    a[i]=b[j];
-    i++;
-    j++;
-  }
-  a[i]='\0';
-  printf("%s",a);
+```c
 
+#include <stdio.h>
+
+int main() {
+  char a[20] = "Hello"; 
+  char b[] = "World";
+  int i = 0;
+  int j = 0;
+
+  while (a[i] != '\0') {
+    i++;
+  }
+
+
+  while (b[j] != '\0') {
+    a[i] = b[j];
+    i++;
+    j++;
+  }
+
+  a[i] = '\0';
+
+  printf("%s", a);
+
+  return 0;
 }
