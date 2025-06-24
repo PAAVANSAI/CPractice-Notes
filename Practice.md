@@ -27,3 +27,25 @@ int main() {
 
   return 0;
 }
+
+```
+
+# C Practice  -  Reverse an array using pointers.
+
+```c
+
+
+#include <stdio.h>
+
+int main()
+{
+    int arr[] = {10,20,30,40};
+    int *ptr = &arr[3];
+    for(int i = 3;i!=-1;i--)
+    {
+        printf("%d ",*(ptr-i));
+    }
+    
+    
+}
+
